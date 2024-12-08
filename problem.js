@@ -64,4 +64,53 @@ function reverseString(str) {
   console.log("LCM of", numlcm1, "and", numlcm2, "is", result23);
   
   
-  // 
+// Check if number is in array.
+
+function checkNumber(array, target) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === target) {
+      console.log("YES");
+      return; // 
+    }
+  }
+  console.log("NO"); 
+}
+const numbers = [1, 2, 3, 4, 5]; 
+const target = 3; 
+
+checkNumber(numbers, target); 
+
+
+
+// Calculating the area and circumference of a circle
+
+const PI = 3.141592;
+const radius = 5;
+const area = PI * Math.pow(radius, 2);
+console.log(`The area of the circle: ${area.toFixed(2)} cm^2`);
+const circumference = 2 * PI * radius;
+console.log(`The circumference of the circle: ${circumference.toFixed(2)} cm`);
+
+// alternative way:
+
+function calculateCircleProperties(radius) {
+  if (radius <= 0) {
+    console.log("Radius must be a positive number.");
+    return;
+  }
+
+  const pi = 3.141592;
+  const area = pi * radius * radius; 
+  const circumference = 2 * pi * radius; 
+
+  console.log("For a circle with radius " + radius + ":");
+  console.log("Area: " + area.toFixed(2)); 
+  console.log("Circumference: " + circumference.toFixed(2)); // Round the circumference to 2 decimal places
+}
+
+calculateCircleProperties(5);  
+
+
+
+
+
